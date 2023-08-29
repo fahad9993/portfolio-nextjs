@@ -1,11 +1,18 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
+
+const imageLoader = ({ src }: any) => {
+    return `https://fahad9993.github.io/cv-new/assets/img/${src}`
+  }
 
 export default function Sidebar() {
   return (
     <div>
         <Image
-            src='https://fahad9993.github.io/cv-new/assets/img/profilePic.png'
+            loader={imageLoader}
+            src='profilePic.png'
             width={200}
             height={200}
             alt='user avatar'

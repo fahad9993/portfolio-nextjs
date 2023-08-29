@@ -1,7 +1,7 @@
 // https://www.youtube.com/playlist?list=PLQKg8mIgoxKpvIWyxMM-Nn6s_iww0KX53
 // Using the above playlist for creating this portfolio
 
-import Sidebar from '@/components/sidebar'
+import Sidebar from '@/components/Sidebar'
 
 export default function Home() {
   return (
