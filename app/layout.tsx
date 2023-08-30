@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito_sans.className}>{children}</body>
+      <body className={`${nunito_sans.className} bg-gradient-to-r from-green to to-blue-400`}>{children}</body>
     </html>
   )
 }

@@ -16,6 +16,11 @@ const config: Config = {
       fontFamily: {
         cursive: ['var(--font-blackOps)'],
       },
+      colors: {
+        green: {
+          DEFAULT: '#00f260',
+        }
+      },
     },
   },
   plugins: [],
