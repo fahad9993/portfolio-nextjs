@@ -6,10 +6,17 @@ import Link from 'next/link'
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
+import { Black_Ops_One } from 'next/font/google'
 
 const imageLoader = ({ src }: any) => {
     return `https://fahad9993.github.io/cv-new/assets/img/${src}`
   }
+
+const black_ops_one = Black_Ops_One({
+    weight: '400',
+    subsets: ['latin'],
+    variable: '--font-blackOps',
+  })
 
 export default function Sidebar() {
   return (
@@ -22,7 +29,7 @@ export default function Sidebar() {
             className='rounded-full mx-auto'
             alt='user avatar'
         />
-        <h3 className='my-4 text-3xl font-medium tracking-wider'>Md. <span>Fahad</span> Rahman</h3>
+        <h3 className={`${black_ops_one.className} my-4 text-3xl font-medium tracking-wider font-cursive`}>Md. <span>Fahad</span> Rahman</h3>
         <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>Mechanical Engineer</p>
         <Link
             href='https://fahad9993.github.io/cv-new/assets/pdf/Fahad-cv.pdf'
