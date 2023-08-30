@@ -1,10 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState<string>("");
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === "/") setActiveItem("About");
+  }, []);
 
   return (
     <div>
