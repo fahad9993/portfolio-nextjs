@@ -11,6 +11,8 @@ export default function Navbar() {
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("About");
+    if (pathname === "/resume") setActiveItem("Resume");
+    if (pathname === "/projects") setActiveItem("Projects");
   }, []);
 
   return (
