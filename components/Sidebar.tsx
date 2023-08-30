@@ -29,7 +29,7 @@ export default function Sidebar() {
             className='rounded-full mx-auto'
             alt='user avatar'
         />
-        <h3 className={`${black_ops_one.className} my-4 text-3xl font-medium tracking-wider font-cursive`}>Md. <span>Fahad</span> Rahman</h3>
+        <h3 className={`${black_ops_one.className} my-4 text-3xl font-medium tracking-wider font-cursive`}>Md. Fahad Rahman</h3>
         <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>Mechanical Engineer</p>
         <Link
             href='https://fahad9993.github.io/cv-new/assets/pdf/Fahad-cv.pdf'
@@ -37,7 +37,7 @@ export default function Sidebar() {
             <GiTie className='w-6 h-6'/> Download Resume
         </Link>
         {/* social icons */}
-        <div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full'>
+        <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
             <Link href='https://www.facebook.com/fahad9993'>
                 <AiFillFacebook className='w-8 h-8 cursor-pointer'/>
             </Link>
@@ -59,8 +59,8 @@ export default function Sidebar() {
             <p className='my-2'>fahad9993@gmail.com</p>
             <p className='my-2'>+880-01760979908</p>
             {/* buttons */}
-            <button className='bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>Email Me</button>
-            <button className='bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white'>Toggle Theme</button>
+            <button className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none' onClick={() => window.open('mailto:fahad9993@gmail.com')}>Email Me</button>
+            <button className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white'>Toggle Theme</button>
         </div>
 
     </div>
