@@ -4,6 +4,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
+interface Props {
+  activeItem: string;
+  setActiveItem: Function;
+  name: string;
+  route: string;
+}
+
+const NavItem = ({ activeItem, setActiveItem, name, route }: Props) => {
+  return activeItem !== name ? (
+    <Link href={route}>
+      <span onClick={() => setActiveItem(name)}>{name}</span>
+    </Link>
+  ) : null;
+};
+
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState<string>("");
 
@@ -19,21 +34,24 @@ export default function Navbar() {
     <div>
       <span className="font-bold text-green">{activeItem}</span>
       <div className="text-red-400 font-semibold flex space-x-3">
-        {activeItem !== "About" && (
-          <Link href="/">
-            <span onClick={() => setActiveItem("About")}>About</span>
-          </Link>
-        )}
-        {activeItem !== "Resume" && (
-          <Link href="/resume">
-            <span onClick={() => setActiveItem("Resume")}>Resume</span>
-          </Link>
-        )}
-        {activeItem !== "Projects" && (
-          <Link href="/projects">
-            <span onClick={() => setActiveItem("Projects")}>Projects</span>
-          </Link>
-        )}
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name="About"
+          route="/"
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name="Resume"
+          route="/resume"
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name="Projects"
+          route="/projects"
+        />
       </div>
     </div>
   );
