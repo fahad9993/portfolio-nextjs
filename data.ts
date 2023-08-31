@@ -1,10 +1,17 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer, FaCode, FaPython, FaReact, FaNodeJs } from "react-icons/fa";
 import { AiFillApi, AiOutlineApi } from "react-icons/ai";
-import { SiExpress, SiJavascript, SiLatex, SiMongodb } from "react-icons/si";
+import {
+  SiAdobeillustrator,
+  SiExpress,
+  SiJavascript,
+  SiLatex,
+  SiMongodb,
+} from "react-icons/si";
 import { SlLayers } from "react-icons/sl";
 import { IService, ISkill } from "@/types";
 import { BiCodeCurly } from "react-icons/bi";
+import { LiaDrawPolygonSolid } from "react-icons/lia";
 import styles from "@/components/styles.module.css";
 
 export const services: IService[] = [
@@ -91,5 +98,23 @@ export const skills: ISkill[] = [
     name: "Latex",
     level: "90%",
     Icon: SiLatex,
+  },
+];
+
+export const tools: ISkill[] = [
+  {
+    name: "AutoCAD",
+    level: "20%",
+    Icon: LiaDrawPolygonSolid,
+  },
+  {
+    name: "Solidworks",
+    level: "50%",
+    Icon: LiaDrawPolygonSolid,
+  },
+  {
+    name: "Adobe Illustrator",
+    level: "70%",
+    Icon: SiAdobeillustrator,
   },
 ];
