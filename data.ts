@@ -3,6 +3,7 @@ import { FaServer, FaCode } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
 import { SiLatex } from "react-icons/si";
 import { IService } from "@/types";
+import styles from "@/components/styles.module.css";
 
 export const services: IService[] = [
   {
@@ -32,6 +33,7 @@ export const services: IService[] = [
   {
     Icon: SiLatex,
     title: "Typesetting",
-    about: "Work with ",
+    about:
+      "Work with <b><span className={styles.latex}>L<sup>A</sup>T<sub>E</sub>X</span></b>",
   },
 ];
