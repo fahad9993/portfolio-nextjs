@@ -1,17 +1,11 @@
 "use client";
 
+import { NavItemProps } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-interface Props {
-  activeItem: string;
-  setActiveItem: Function;
-  name: string;
-  route: string;
-}
-
-const NavItem = ({ activeItem, setActiveItem, name, route }: Props) => {
+const NavItem = ({ activeItem, setActiveItem, name, route }: NavItemProps) => {
   return activeItem !== name ? (
     <Link href={route}>
       <span onClick={() => setActiveItem(name)} className="hover:text-green">
