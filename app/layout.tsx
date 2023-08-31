@@ -25,7 +25,7 @@ export default function RootLayout({
           <div className="col-span-12 lg:col-span-3 bg-white rounded-2xl p-4 text-center">
             <Sidebar />
           </div>
-          <div className="col-span-12 lg:col-span-9 bg-white rounded-2xl flex flex-col">
+          <div className="col-span-12 lg:col-span-9 bg-white rounded-2xl flex flex-col overflow-hidden">
             <Navbar />
             {children}
           </div>
