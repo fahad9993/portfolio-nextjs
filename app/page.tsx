@@ -5,8 +5,8 @@ import ServiceCard from "@/components/ServiceCard";
 
 export default function Home() {
   return (
-    <div className="p-4">
-      <h5>
+    <div className="flex flex-col px-6 pt-1">
+      <h5 className="my-3 font-medium">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -14,11 +14,16 @@ export default function Home() {
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
       </h5>
-      <div>
-        <h6>What I offer</h6>
-        <div>
+      <div
+        className="p-4 mt-5 bg-gray-400"
+        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
+      >
+        <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
+        <div className="grid gap-6 lg:grid-cols-2">
           {services.map((service) => (
-            <ServiceCard service={service} />
+            <div className="bg-gray-200 rounded-lg lg:col-span-1">
+              <ServiceCard service={service} />
+            </div>
           ))}
         </div>
       </div>

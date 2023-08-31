@@ -30,7 +30,7 @@ export default function Sidebar() {
         alt="user avatar"
       />
       <h3
-        className={`${black_ops_one.className} my-4 text-3xl font-medium tracking-wider`}
+        className={`${black_ops_one.variable} my-4 text-3xl font-medium tracking-wider font-cursive`}
       >
         Md. Fahad Rahman
       </h3>
