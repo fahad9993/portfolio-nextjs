@@ -1,9 +1,10 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer, FaCode } from "react-icons/fa";
-import { AiOutlineApi } from "react-icons/ai";
-import { SiLatex } from "react-icons/si";
+import { FaServer, FaCode, FaPython, FaReact, FaNodeJs } from "react-icons/fa";
+import { AiFillApi, AiOutlineApi } from "react-icons/ai";
+import { SiExpress, SiJavascript, SiLatex, SiMongodb } from "react-icons/si";
 import { SlLayers } from "react-icons/sl";
-import { IService } from "@/types";
+import { IService, ISkill } from "@/types";
+import { BiCodeCurly } from "react-icons/bi";
 import styles from "@/components/styles.module.css";
 
 export const services: IService[] = [
@@ -42,5 +43,53 @@ export const services: IService[] = [
     title: "Design",
     about:
       "Work with <b>AutoCAD</b>, <b>Solidworks</b> and <b>Adobe Illustrator</b> to create engineering designs, logos and many more",
+  },
+];
+
+export const skills: ISkill[] = [
+  {
+    name: "Python",
+    level: "40%",
+    Icon: FaPython,
+  },
+  {
+    name: "C",
+    level: "90%",
+    Icon: BiCodeCurly,
+  },
+  {
+    name: "JavaScript",
+    level: "80%",
+    Icon: SiJavascript,
+  },
+  {
+    name: "React",
+    level: "80%",
+    Icon: FaReact,
+  },
+  {
+    name: "Node.js",
+    level: "60%",
+    Icon: FaNodeJs,
+  },
+  {
+    name: "Express.js",
+    level: "50%",
+    Icon: SiExpress,
+  },
+  {
+    name: "MongoDB",
+    level: "80%",
+    Icon: SiMongodb,
+  },
+  {
+    name: "API",
+    level: "30%",
+    Icon: AiFillApi,
+  },
+  {
+    name: "Latex",
+    level: "90%",
+    Icon: SiLatex,
   },
 ];
