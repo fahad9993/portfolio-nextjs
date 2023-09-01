@@ -119,7 +119,7 @@ export const tools: ISkill[] = [
   },
 ];
 
-export const education: IEducation[] = [
+export const educations: IEducation[] = [
   {
     title: "BSc in Mechanical Engineering",
     place: "Bangladesh University of Engineering and Technology",
@@ -142,7 +142,7 @@ export const education: IEducation[] = [
   },
 ];
 
-export const experience: IEducation[] = [
+export const experiences: IEducation[] = [
   {
     title: "Admin and Accounts Officer",
     place: "HISP Bangladesh Foundation",
