@@ -1,5 +1,5 @@
 import EduExpCard from "@/components/EduExpCard";
-import { educations } from "@/data";
+import { educations, experiences } from "@/data";
 import React from "react";
 
 export default function page() {
@@ -20,13 +20,11 @@ export default function page() {
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">
-              Admin and Accounts Officer
-            </h5>
-            <p className="font-semibold">HISP Bangladesh Foundation</p>
-            <p className="my-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            {experiences.map((card, i) => (
+              <div key={i}>
+                <EduExpCard card={card} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
