@@ -8,16 +8,7 @@ export default function page() {
     <div className="px-6 py-2">
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
-          <div>
-            {educations.map((card, i) => (
-              <div key={i}>
-                <EduExpCard card={card} />
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Experience */}
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
@@ -28,9 +19,21 @@ export default function page() {
             ))}
           </div>
         </div>
+        {/* Education */}
+        <div>
+          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <div>
+            {educations.map((card, i) => (
+              <div key={i}>
+                <EduExpCard card={card} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
       {/* Languages and Tools */}
       <div className="grid gap-6 md:grid-cols-2">
+        {/* Languages */}
         <div>
           <h5 className="my-3 text-2xl font-bold">Languages and Frameworks</h5>
           <div className="my-2">
@@ -39,6 +42,7 @@ export default function page() {
             ))}
           </div>
         </div>
+        {/* Tools */}
         <div>
           <h5 className="my-3 text-2xl font-bold">Tools and Softwares</h5>
           <div className="my-2">
