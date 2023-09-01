@@ -134,7 +134,7 @@ export const education: IEducation[] = [
     timeframe: "Jul 2011",
   },
   {
-    title: "BSc in Mechanical Engineering",
+    title: "SSC",
     place: "Dhaka Residential Model College",
     about: "It was the first national examination.",
     timeframe: "Jun 2008",
