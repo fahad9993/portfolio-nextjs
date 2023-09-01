@@ -53,7 +53,7 @@ export const services: IService[] = [
   },
 ];
 
-export const skills: ISkill[] = [
+export const languages: ISkill[] = [
   {
     name: "Python",
     level: "40%",
