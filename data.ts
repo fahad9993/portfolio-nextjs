@@ -140,3 +140,27 @@ export const education: IEducation[] = [
     timeframe: "Jun 2008",
   },
 ];
+
+export const experience: IEducation[] = [
+  {
+    title: "Admin and Accounts Officer",
+    place: "HISP Bangladesh Foundation",
+    about:
+      "As an Admin and Accounts Officer, I collaborated with teammates to perform assigned tasks, organized and supported team meetings, managed HR operations, kept track of projects, prepared reports, and facilitated teams with innovative ideas.",
+    timeframe: "Jan 2022 - May 2022",
+  },
+  {
+    title: "Administrative Assistant",
+    place: "World Health Organization (WHO)",
+    about:
+      "I drafted and finalized technical reports, prepared ad-hoc reports, field visit reports, financial reports, and COVID-19 situation reports. I also provided administrative and secretarial support, drafted SOPs, proofread documents, replied to correspondence, and managed mail, queries, and visitors.",
+    timeframe: "Jan 2020 - Oct 2021",
+  },
+  {
+    title: "Administrative Assistant",
+    place: "Directorate General of Health Services (DGHS)",
+    about:
+      "I contributed to the development of guidelines on clinical management for FDMNs, participated in the development of manuals and guidelines, and helped prepare the epidemiological report of the diphtheria outbreak. I also provided administrative and secretarial support to health interventions and support for signing MoU and other documents.",
+    timeframe: "Nov 2017 - Nov 2018",
+  },
+];
