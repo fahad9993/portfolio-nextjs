@@ -9,7 +9,7 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { SlLayers } from "react-icons/sl";
-import { IService, ISkill } from "@/types";
+import { IEducation, IService, ISkill } from "@/types";
 import { BiCodeCurly } from "react-icons/bi";
 import { LiaDrawPolygonSolid } from "react-icons/lia";
 import styles from "@/components/styles.module.css";
@@ -116,5 +116,27 @@ export const tools: ISkill[] = [
     name: "Adobe Illustrator",
     level: "70%",
     Icon: SiAdobeillustrator,
+  },
+];
+
+export const education: IEducation[] = [
+  {
+    title: "BSc in Mechanical Engineering",
+    place: "Bangladesh University of Engineering and Technology",
+    about: "I have persued the degree from 2012 to 2017.",
+    timeframe: "Sep 2017",
+  },
+  {
+    title: "HSC",
+    place: "Dhaka Residential Model College",
+    about:
+      "I was in the Science group. I have Higher Mathematics and Biology in major.",
+    timeframe: "Jul 2011",
+  },
+  {
+    title: "BSc in Mechanical Engineering",
+    place: "Dhaka Residential Model College",
+    about: "It was the first national examination.",
+    timeframe: "Jun 2008",
   },
 ];

@@ -17,3 +17,10 @@ export interface NavItemProps {
   name: string;
   route: string;
 }
+
+export interface IEducation {
+  title: string;
+  place: string;
+  about: string;
+  timeframe: string;
+}
