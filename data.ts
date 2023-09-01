@@ -123,7 +123,8 @@ export const education: IEducation[] = [
   {
     title: "BSc in Mechanical Engineering",
     place: "Bangladesh University of Engineering and Technology",
-    about: "I have persued the degree from 2012 to 2017.",
+    about:
+      "BSc in Mechanical Engineering from BUET, 2017. Aspiring to pursue further studies in Automobile or Aeronautical Engineering.",
     timeframe: "Sep 2017",
   },
   {
