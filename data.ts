@@ -104,7 +104,7 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
   {
     name: "AutoCAD",
-    level: "20%",
+    level: "40%",
     Icon: LiaDrawPolygonSolid,
   },
   {
