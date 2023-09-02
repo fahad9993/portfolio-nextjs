@@ -24,10 +24,10 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class">
           <main className="grid grid-cols-12 gap-6 my-14 px-5 lg:px-48 sm:px-20 md:px-32">
-            <div className="col-span-12 lg:col-span-3 bg-white dark:bg-dark-500 rounded-2xl p-4 text-center">
+            <div className="col-span-12 lg:col-span-3 bg-white dark:bg-dark-500 rounded-2xl p-4 text-center shadow-custom-light dark:shadow-custom-dark">
               <Sidebar />
             </div>
-            <div className="col-span-12 lg:col-span-9 bg-white dark:bg-dark-500 rounded-2xl flex flex-col overflow-hidden">
+            <div className="col-span-12 lg:col-span-9 bg-white dark:bg-dark-500 rounded-2xl flex flex-col overflow-hidden shadow-custom-light dark:shadow-custom-dark">
               <Navbar />
               {children}
             </div>
