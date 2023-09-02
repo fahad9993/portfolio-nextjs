@@ -1,11 +1,9 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/lib/providers";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
 
