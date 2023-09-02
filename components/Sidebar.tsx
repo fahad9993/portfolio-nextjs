@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { Black_Ops_One } from "next/font/google";
+import { useTheme } from "next-themes";
 
 const imageLoader = ({ src }: any) => {
   return `https://fahad9993.github.io/cv-new/assets/img/${src}`;
@@ -19,6 +20,12 @@ const black_ops_one = Black_Ops_One({
 });
 
 export default function Sidebar() {
+  const { theme, setTheme } = useTheme();
+
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div>
       <Image
@@ -73,7 +80,10 @@ export default function Sidebar() {
         >
           Email Me
         </button>
-        <button className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white">
+        <button
+          onClick={changeTheme}
+          className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white"
+        >
           Toggle Theme
         </button>
       </div>

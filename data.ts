@@ -12,7 +12,6 @@ import { SlLayers } from "react-icons/sl";
 import { IEducation, IService, ISkill } from "@/types";
 import { BiCodeCurly } from "react-icons/bi";
 import { LiaDrawPolygonSolid } from "react-icons/lia";
-import styles from "@/components/styles.module.css";
 
 export const services: IService[] = [
   {
