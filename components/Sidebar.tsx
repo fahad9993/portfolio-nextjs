@@ -41,12 +41,12 @@ export default function Sidebar() {
       >
         Md. Fahad Rahman
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full">
         Mechanical Engineer
       </p>
       <Link
         href="https://fahad9993.github.io/cv-new/assets/pdf/Fahad-cv.pdf"
-        className="px-2 py-1 my-3 bg-gray-200 rounded-full flex justify-center items-center"
+        className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full flex justify-center items-center"
       >
         <GiTie className="w-6 h-6" /> Download Resume
       </Link>
@@ -64,7 +64,7 @@ export default function Sidebar() {
       </div>
       {/* address */}
       <div
-        className="py-4 my-5 bg-gray-200"
+        className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">

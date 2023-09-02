@@ -15,13 +15,16 @@ export default function Home() {
         essentially unchanged.
       </h5>
       <div
-        className="p-4 mt-5 bg-gray-400 flex-grow"
+        className="p-4 mt-5 bg-gray-400 dark:bg-dark-100 flex-grow"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
         <div className="grid gap-6 lg:grid-cols-2">
           {services.map((service, i) => (
-            <div key={i} className="bg-gray-200 rounded-lg lg:col-span-1">
+            <div
+              key={i}
+              className="bg-gray-200 dark:bg-dark-200 rounded-lg lg:col-span-1"
+            >
               <ServiceCard service={service} />
             </div>
           ))}

@@ -20,14 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito_sans.className} bg-gradient-to-r from-green to to-blue-400`}
+        className={`${nunito_sans.className} bg-gradient-to-r from-green to to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white`}
       >
         <ThemeProvider attribute="class">
           <main className="grid grid-cols-12 gap-6 my-14 px-5 lg:px-48 sm:px-20 md:px-32">
-            <div className="col-span-12 lg:col-span-3 bg-white dark:bg-black rounded-2xl p-4 text-center">
+            <div className="col-span-12 lg:col-span-3 bg-white dark:bg-dark-500 rounded-2xl p-4 text-center">
               <Sidebar />
             </div>
-            <div className="col-span-12 lg:col-span-9 bg-white rounded-2xl flex flex-col overflow-hidden">
+            <div className="col-span-12 lg:col-span-9 bg-white dark:bg-dark-500 rounded-2xl flex flex-col overflow-hidden">
               <Navbar />
               {children}
             </div>
