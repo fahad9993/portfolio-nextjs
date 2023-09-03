@@ -178,7 +178,7 @@ export const projects: IProject[] = [
   {
     title: "ToDo List",
     description: "A simple webapp for creating todo list.",
-    image_path: "/images/todo_list.png",
+    image_path: "/images/todo.png",
     deployed_url: "https://todolist-zmu0.onrender.com/",
     github_url: "https://github.com/fahad9993/todolist",
     category: ["express", "mongoDB", "node", "javascript", "html", "css"],
