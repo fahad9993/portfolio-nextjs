@@ -9,7 +9,7 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { SlLayers } from "react-icons/sl";
-import { IEducation, IService, ISkill } from "@/types";
+import { IEducation, IProject, IService, ISkill } from "@/types";
 import { BiCodeCurly } from "react-icons/bi";
 import { LiaDrawPolygonSolid } from "react-icons/lia";
 
@@ -162,5 +162,43 @@ export const experiences: IEducation[] = [
     about:
       "I contributed to the development of guidelines on clinical management for FDMNs, participated in the development of manuals and guidelines, and helped prepare the epidemiological report of the diphtheria outbreak. I also provided administrative and secretarial support to health interventions and support for signing MoU and other documents.",
     timeframe: "Nov 2017 - Nov 2018",
+  },
+];
+
+export const projects: IProject[] = [
+  {
+    title: "Personal Porfolio",
+    description: "A simple portfolio website for test.",
+    image_path: "/images/cv_new.png",
+    deployed_url: "https://fahad9993.github.io/cv-new",
+    github_url: "https://github.com/fahad9993/cv-new",
+    category: ["javascript", "html", "css"],
+    key_techs: ["Swiper Js", "Dark Mode", "JavaScript"],
+  },
+  {
+    title: "ToDo List",
+    description: "A simple webapp for creating todo list.",
+    image_path: "/images/todo_list.png",
+    deployed_url: "https://todolist-zmu0.onrender.com/",
+    github_url: "https://github.com/fahad9993/todolist",
+    category: ["express", "mongoDB", "node", "javascript", "html", "css"],
+    key_techs: [
+      "EJS",
+      "BodyParser",
+      "Lodash",
+      "Mongoose",
+      "MongoDB",
+      "Express",
+      "Node",
+    ],
+  },
+  {
+    title: "Basic Portfolio",
+    description: "A simple portfolio website with minimal feature.",
+    image_path: "/images/cv.png",
+    deployed_url: "https://fahad9993.github.io/cv",
+    github_url: "https://github.com/fahad9993/cv",
+    category: ["html", "css"],
+    key_techs: ["Html", "CSS"],
   },
 ];
