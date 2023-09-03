@@ -31,6 +31,15 @@ export interface IProject {
   image_path: string;
   deployed_url: string;
   github_url: string;
-  category: string[];
+  category: Category[];
   key_techs: string[];
 }
+
+export type Category =
+  | "javascript"
+  | "react"
+  | "mongoDB"
+  | "node"
+  | "express"
+  | "html"
+  | "css";
