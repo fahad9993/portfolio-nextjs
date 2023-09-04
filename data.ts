@@ -167,6 +167,15 @@ export const experiences: IEducation[] = [
 
 export const projects: IProject[] = [
   {
+    title: "NextJS Portfolio",
+    description: "Build on NextJS and other cool features.",
+    image_path: "/images/cv_nextjs.png",
+    deployed_url: "#",
+    github_url: "https://github.com/fahad9993/portfolio-nextjs",
+    category: ["react", "javascript"],
+    key_techs: ["Framer Motion", "Tailwind CSS", "Next.js"],
+  },
+  {
     title: "Personal Porfolio",
     description: "A simple portfolio website for test.",
     image_path: "/images/cv_new.png",
