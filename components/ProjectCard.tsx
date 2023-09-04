@@ -60,9 +60,9 @@ export default function ProjectCard({
             <h2 className="mb-3 text-xl font-medium md:text-2xl ">{title}</h2>
             <h3 className="mb-3 font-medium">{description}</h3>
             <div className="flex flex-wrap mt-5 gap-x-2 text-sm tracking-wider">
-              {key_techs.map((tech, i) => (
+              {key_techs.map((tech) => (
                 <span
-                  key={i}
+                  key={tech}
                   className="px-2 py-1 my-1 bg-gray-200 dark:bg-dark-200 rounded-sm"
                 >
                   {tech}
