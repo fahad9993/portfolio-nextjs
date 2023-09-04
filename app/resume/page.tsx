@@ -12,8 +12,8 @@ export default function page() {
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            {experiences.map((card, i) => (
-              <div key={i}>
+            {experiences.map((card) => (
+              <div key={card.place}>
                 <EduExpCard card={card} />
               </div>
             ))}
@@ -23,8 +23,8 @@ export default function page() {
         <div>
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
-            {educations.map((card, i) => (
-              <div key={i}>
+            {educations.map((card) => (
+              <div key={card.title}>
                 <EduExpCard card={card} />
               </div>
             ))}
