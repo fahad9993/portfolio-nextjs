@@ -172,7 +172,7 @@ export const projects: IProject[] = [
     image_path: "/images/cv_new.png",
     deployed_url: "https://fahad9993.github.io/cv-new",
     github_url: "https://github.com/fahad9993/cv-new",
-    category: ["javascript", "html", "css"],
+    category: ["javascript"],
     key_techs: ["Swiper Js", "Dark Mode", "JavaScript"],
   },
   {
@@ -181,7 +181,7 @@ export const projects: IProject[] = [
     image_path: "/images/todo.png",
     deployed_url: "https://todolist-zmu0.onrender.com/",
     github_url: "https://github.com/fahad9993/todolist",
-    category: ["express", "mongoDB", "node", "javascript", "html", "css"],
+    category: ["express", "mongoDB", "node", "javascript"],
     key_techs: [
       "EJS",
       "BodyParser",
