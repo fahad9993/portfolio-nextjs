@@ -4,22 +4,29 @@ import { Category } from "@/types";
 export function NavItem({
   value,
   handlerFilterCategory,
+  active,
 }: {
   value: Category | "all";
   handlerFilterCategory: Function;
+  active: string;
 }) {
+  let className = "capitalize cursor-pointer hover:text-green";
+  if (active === value) {
+    className += " text-green";
+  }
+
   return (
-    <li
-      className="capitalize cursor-pointer hover:text-green"
-      onClick={() => handlerFilterCategory(value)}
-    >
+    <li className={className} onClick={() => handlerFilterCategory(value)}>
       {value}
     </li>
   );
 }
 
 export default function ProjectNavbar(
-  props: React.JSX.IntrinsicAttributes & { handlerFilterCategory: Function }
+  props: React.JSX.IntrinsicAttributes & {
+    handlerFilterCategory: Function;
+    active: string;
+  }
 ) {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
