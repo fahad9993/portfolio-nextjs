@@ -26,18 +26,27 @@ export default function ProjectCard({
     <div>
       <Image
         src={image_path}
-        width={200}
-        height={200}
+        width={300}
+        height={150}
+        style={{ width: "auto", height: "auto" }}
         alt={title}
         className="cursor-pointer"
         onClick={() => setShowDetails(true)}
+        priority={false}
       />
       <p className="my-2 text-center">{title}</p>
 
       {showDetails && (
         <div className="grid md:grid-cols-2 absolute top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2">
           <div>
-            <Image src={image_path} width={400} height={400} alt={title} />
+            <Image
+              src={image_path}
+              width={300}
+              height={150}
+              style={{ width: "auto", height: "auto" }}
+              alt={title}
+              priority={false}
+            />
             <div className="flex justify-center my-4 space-x-3">
               <Link
                 href={github_url}

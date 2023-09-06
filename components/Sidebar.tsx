@@ -9,9 +9,9 @@ import { GiTie } from "react-icons/gi";
 import { Black_Ops_One } from "next/font/google";
 import { useTheme } from "next-themes";
 
-const imageLoader = ({ src }: any) => {
-  return `https://fahad9993.github.io/cv-new/assets/img/${src}`;
-};
+// const imageLoader = ({ src }: any) => {
+//   return `https://fahad9993.github.io/cv-new/assets/img/${src}`;
+// };
 
 const black_ops_one = Black_Ops_One({
   weight: "400",
@@ -29,11 +29,10 @@ export default function Sidebar() {
   return (
     <div>
       <Image
-        loader={imageLoader}
-        src="profilePic.png"
-        width={100}
-        height={100}
-        className="rounded-full mx-auto"
+        src="https://fahad9993.github.io/cv-new/assets/img/profilePic.png"
+        width={128}
+        height={128}
+        className="rounded-full mx-auto border"
         alt="user avatar"
       />
       <h3
