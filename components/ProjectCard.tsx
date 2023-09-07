@@ -11,6 +11,7 @@ import { MdClose } from "react-icons/md";
 
 export default function ProjectCard({
   project: {
+    id,
     title,
     description,
     image_path,
@@ -19,11 +20,13 @@ export default function ProjectCard({
     category,
     key_techs,
   },
+  showDetails,
+  setShowDetails,
 }: {
   project: IProject;
+  showDetails: string | null;
+  setShowDetails: (id: string | null) => void;
 }) {
-  const [showDetails, setShowDetails] = useState(false);
-
   return (
     <div>
       <Image
@@ -33,12 +36,12 @@ export default function ProjectCard({
         style={{ width: "auto", height: "auto" }}
         alt={title}
         className="cursor-pointer"
-        onClick={() => setShowDetails(true)}
+        onClick={() => setShowDetails(id)}
         priority={false}
       />
       <p className="my-2 text-center">{title}</p>
 
-      {showDetails && (
+      {showDetails === id && (
         <div className="grid md:grid-cols-2 absolute top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div variants={fadeInUp}>
@@ -97,7 +100,7 @@ export default function ProjectCard({
             </motion.div>
           </motion.div>
           <button
-            onClick={() => setShowDetails(false)}
+            onClick={() => setShowDetails(null)}
             className="absolute top-3 right-3 p-1 focus:outline-none bg-gray-200 dark:bg-dark-200"
           >
             <MdClose size={30} />

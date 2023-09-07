@@ -167,6 +167,7 @@ export const experiences: IEducation[] = [
 
 export const projects: IProject[] = [
   {
+    id: "p01",
     title: "NextJS Portfolio",
     description: "Build on NextJS and other cool features.",
     image_path: "/images/cv_nextjs.png",
@@ -176,6 +177,7 @@ export const projects: IProject[] = [
     key_techs: ["Framer Motion", "Tailwind CSS", "Next.js"],
   },
   {
+    id: "p02",
     title: "Personal Porfolio",
     description: "A simple portfolio website for test.",
     image_path: "/images/cv_new.png",
@@ -185,6 +187,7 @@ export const projects: IProject[] = [
     key_techs: ["Swiper Js", "Dark Mode", "JavaScript"],
   },
   {
+    id: "p03",
     title: "ToDo List",
     description: "A simple webapp for creating todo list.",
     image_path: "/images/todo.png",
@@ -202,6 +205,7 @@ export const projects: IProject[] = [
     ],
   },
   {
+    id: "p04",
     title: "Basic Portfolio",
     description: "A simple portfolio website with minimal feature.",
     image_path: "/images/cv.png",

@@ -12,6 +12,8 @@ export default function page() {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
 
+  const [showDetails, setShowDetails] = useState<string | null>(null);
+
   const handlerFilterCategory = (category: Category | "all") => {
     if (category === "all") {
       setProjects(projectsData);
@@ -53,7 +55,11 @@ export default function page() {
             key={project.title}
             variants={fadeInUp}
           >
-            <ProjectCard project={project} />
+            <ProjectCard
+              project={project}
+              showDetails={showDetails}
+              setShowDetails={setShowDetails}
+            />
           </motion.div>
         ))}
       </motion.div>

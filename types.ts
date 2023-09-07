@@ -26,6 +26,7 @@ export interface IEducation {
 }
 
 export interface IProject {
+  id: string;
   title: string;
   description: string;
   image_path: string;
