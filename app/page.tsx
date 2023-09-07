@@ -5,11 +5,17 @@
 import { services } from "@/data";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { fadeInUp, stagger } from "@/animations";
+import { fadeInUp, routeAnimation, stagger } from "@/animations";
 
 export default function Home() {
   return (
-    <div className="flex flex-col px-6 pt-1 flex-grow">
+    <motion.div
+      className="flex flex-col px-6 pt-1 flex-grow"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h5 className="my-3 font-medium">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -40,6 +46,6 @@ export default function Home() {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

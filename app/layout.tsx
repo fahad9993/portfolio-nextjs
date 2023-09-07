@@ -1,9 +1,12 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import { ThemeProvider } from "@/lib/providers";
+import { AnimatePresence } from "framer-motion";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
 
@@ -29,7 +32,7 @@ export default function RootLayout({
             </div>
             <div className="col-span-12 lg:col-span-9 bg-white dark:bg-dark-500 rounded-2xl flex flex-col overflow-hidden shadow-custom-light dark:shadow-custom-dark">
               <Navbar />
-              {children}
+              <AnimatePresence mode="wait">{children}</AnimatePresence>
             </div>
           </main>
         </ThemeProvider>

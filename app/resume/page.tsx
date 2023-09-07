@@ -5,11 +5,17 @@ import EduExpCard from "@/components/EduExpCard";
 import { educations, experiences, languages, tools } from "@/data";
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/animations";
+import { fadeInUp, routeAnimation } from "@/animations";
 
 export default function page() {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         {/* Experience */}
@@ -56,6 +62,6 @@ export default function page() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

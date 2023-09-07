@@ -1,6 +1,6 @@
 "use client";
 
-import { fadeInUp, stagger } from "@/animations";
+import { fadeInUp, routeAnimation, stagger } from "@/animations";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectNavbar from "@/components/ProjectNavbar";
 import { projects as projectsData } from "@/data";
@@ -27,7 +27,14 @@ export default function page() {
   };
 
   return (
-    <div className="px-5 py-2 overflow-auto" style={{ height: "65vh" }}>
+    <motion.div
+      className="px-5 py-2 overflow-auto"
+      style={{ height: "65vh" }}
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <nav>
         <ProjectNavbar
           handlerFilterCategory={handlerFilterCategory}
@@ -50,6 +57,6 @@ export default function page() {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
