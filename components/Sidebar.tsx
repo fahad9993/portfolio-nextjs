@@ -34,6 +34,7 @@ export default function Sidebar() {
         height={128}
         className="rounded-full mx-auto border"
         alt="user avatar"
+        priority={false}
       />
       <h3
         className={`${black_ops_one.variable} my-4 text-3xl font-medium tracking-wider font-cursive`}
