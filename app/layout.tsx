@@ -2,18 +2,19 @@
 
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import { ThemeProvider } from "@/lib/providers";
 import { AnimatePresence } from "framer-motion";
+import Head from "next/head";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Md. Fahad Rahman | Portfolio",
-  description: "Strive for excellence",
-};
+// export const metadata: Metadata = {
+//   title: "Md. Fahad Rahman | Portfolio",
+//   description: "Strive for excellence",
+// };
 
 export default function RootLayout({
   children,
@@ -22,6 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Md. Fahad Rahman | Portfolio | Web Developer</title>
+        <meta
+          name="Portfolio"
+          content="Portfolio for Full Stack Web Developer"
+        />
+      </Head>
+      ;
       <body
         className={`${nunito_sans.className} bg-gradient-to-r from-green to to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white`}
       >
