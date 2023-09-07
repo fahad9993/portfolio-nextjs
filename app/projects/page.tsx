@@ -6,6 +6,7 @@ import ProjectNavbar from "@/components/ProjectNavbar";
 import { projects as projectsData } from "@/data";
 import { Category } from "@/types";
 import { motion } from "framer-motion";
+import Head from "next/head";
 import React, { useState } from "react";
 
 export default function page() {
@@ -37,6 +38,9 @@ export default function page() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Md. Fahad Rahman | Projects | Portfolio</title>
+      </Head>
       <nav>
         <ProjectNavbar
           handlerFilterCategory={handlerFilterCategory}

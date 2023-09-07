@@ -6,6 +6,7 @@ import { services } from "@/data";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "@/animations";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Md. Fahad Rahman | About | Portfolio</title>
+      </Head>
       <h5 className="my-3 font-medium">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

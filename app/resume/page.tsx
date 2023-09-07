@@ -6,6 +6,7 @@ import { educations, experiences, languages, tools } from "@/data";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
+import Head from "next/head";
 
 export default function page() {
   return (
@@ -16,6 +17,9 @@ export default function page() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Md. Fahad Rahman | Resume | Portfolio</title>
+      </Head>
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         {/* Experience */}
