@@ -30,7 +30,7 @@ export default function page() {
 
   return (
     <motion.div
-      className="px-5 py-2 overflow-auto"
+      className="px-5 py-2 overflow-auto md:overflow-hidden"
       style={{ height: "65vh" }}
       variants={routeAnimation}
       initial="initial"
