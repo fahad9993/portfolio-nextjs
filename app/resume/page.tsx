@@ -1,3 +1,5 @@
+"use client";
+
 import Bar from "@/components/Bar";
 import EduExpCard from "@/components/EduExpCard";
 import { educations, experiences, languages, tools } from "@/data";

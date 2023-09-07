@@ -1,3 +1,5 @@
+"use client";
+
 import { ISkill } from "@/types";
 import React from "react";
 import { motion } from "framer-motion";

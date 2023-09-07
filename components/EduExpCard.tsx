@@ -1,3 +1,5 @@
+"use client";
+
 import { IEducation } from "@/types";
 import React from "react";
 
