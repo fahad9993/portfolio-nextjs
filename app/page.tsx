@@ -1,7 +1,11 @@
+"use client";
+
 // https://www.youtube.com/playlist?list=PLQKg8mIgoxKpvIWyxMM-Nn6s_iww0KX53
 // Using the above playlist for creating this portfolio
 import { services } from "@/data";
 import ServiceCard from "@/components/ServiceCard";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "@/animations";
 
 export default function Home() {
   return (
@@ -19,16 +23,22 @@ export default function Home() {
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <motion.div
+          className="grid gap-6 lg:grid-cols-2"
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+        >
           {services.map((service) => (
-            <div
+            <motion.div
               key={service.title}
               className="bg-gray-200 dark:bg-dark-200 rounded-lg lg:col-span-1"
+              variants={fadeInUp}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
