@@ -1,3 +1,5 @@
+"use client";
+
 import { IService } from "@/types";
 import React from "react";
 
