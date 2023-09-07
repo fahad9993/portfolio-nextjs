@@ -4,6 +4,8 @@ import Bar from "@/components/Bar";
 import EduExpCard from "@/components/EduExpCard";
 import { educations, experiences, languages, tools } from "@/data";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInUp } from "@/animations";
 
 export default function page() {
   return (
@@ -11,7 +13,7 @@ export default function page() {
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         {/* Experience */}
-        <div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             {experiences.map((card) => (
@@ -20,9 +22,9 @@ export default function page() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
         {/* Education */}
-        <div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             {educations.map((card) => (
@@ -31,7 +33,7 @@ export default function page() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* Languages and Tools */}
       <div className="grid gap-6 md:grid-cols-2">
