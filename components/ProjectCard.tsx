@@ -42,9 +42,12 @@ export default function ProjectCard({
       <p className="my-2 text-center">{title}</p>
 
       {showDetails === id && (
-        <div className="grid md:grid-cols-2 absolute top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10">
+        <div className="grid md:grid-cols-2 absolute top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10 rounded-lg">
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.div variants={fadeInUp}>
+            <motion.div
+              variants={fadeInUp}
+              className="border-4 border-gray-100"
+            >
               <Image
                 src={image_path}
                 width={300}
