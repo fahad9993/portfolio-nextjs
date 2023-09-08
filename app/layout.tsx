@@ -5,7 +5,7 @@ import "./globals.css";
 // import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
-import { ThemeProvider } from "@/lib/providers";
+import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
 
@@ -30,9 +30,8 @@ export default function RootLayout({
           content="Portfolio for Full Stack Web Developer"
         />
       </Head>
-      ;
       <body
-        className={`${nunito_sans.className} bg-gradient-to-r from-green to to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white`}
+        className={`${nunito_sans.className} bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white`}
       >
         <ThemeProvider attribute="class">
           <main className="grid grid-cols-12 gap-6 my-14 px-5 lg:px-48 sm:px-20 md:px-32">
