@@ -171,7 +171,7 @@ export const projects: IProject[] = [
     title: "NextJS Portfolio",
     description: "Build on NextJS and other cool features.",
     image_path: "/images/cv_nextjs.webp",
-    deployed_url: "#",
+    deployed_url: "https://portfolio-fahad9993.vercel.app",
     github_url: "https://github.com/fahad9993/portfolio-nextjs",
     category: ["react", "javascript"],
     key_techs: ["Framer Motion", "Tailwind CSS", "Next.js"],
