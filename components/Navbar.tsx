@@ -18,9 +18,8 @@ const NavItem = ({ activeItem, setActiveItem, name, route }: NavItemProps) => {
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState<string>("");
 
-  const pathname = usePathname();
-
   useEffect(() => {
+    const pathname = usePathname();
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/resume") setActiveItem("Resume");
     if (pathname === "/projects") setActiveItem("Projects");
