@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
 import Head from "next/head";
 
-export default function page() {
+export default function Resume() {
   return (
     <motion.div
       className="px-6 py-2"

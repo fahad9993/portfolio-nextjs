@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import React, { useState } from "react";
 
-export default function page() {
+export default function Projects() {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
 

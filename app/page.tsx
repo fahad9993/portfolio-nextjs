@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "@/animations";
 import Head from "next/head";
 
-export default function Home() {
+export default function About() {
   return (
     <motion.div
       className="flex flex-col px-6 pt-1 flex-grow"
@@ -22,8 +22,8 @@ export default function Home() {
       </Head>
       <h5 className="my-3 font-medium">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
+        industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book. It has survived not only five
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
