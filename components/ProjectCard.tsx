@@ -37,7 +37,6 @@ export default function ProjectCard({
         alt={title}
         className="cursor-pointer"
         onClick={() => setShowDetails(id)}
-        priority={false}
       />
       <p className="my-2 text-center">{title}</p>
 
@@ -54,7 +53,6 @@ export default function ProjectCard({
                 height={150}
                 style={{ width: "auto", height: "auto" }}
                 alt={title}
-                priority={false}
               />
             </motion.div>
             <motion.div
