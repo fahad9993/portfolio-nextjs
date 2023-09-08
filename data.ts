@@ -170,7 +170,7 @@ export const projects: IProject[] = [
     id: "p01",
     title: "NextJS Portfolio",
     description: "Build on NextJS and other cool features.",
-    image_path: "/images/cv_nextjs.png",
+    image_path: "/images/cv_nextjs.webp",
     deployed_url: "#",
     github_url: "https://github.com/fahad9993/portfolio-nextjs",
     category: ["react", "javascript"],
