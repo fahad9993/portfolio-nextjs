@@ -53,13 +53,13 @@ export default function Sidebar() {
       {/* social icons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <Link href="https://www.facebook.com/fahad9993">
-          <AiFillFacebook className="w-8 h-8 cursor-pointer" />
+          <AiFillFacebook className="w-8 h-8 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://www.github.com/fahad9993">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+          <AiFillGithub className="w-8 h-8 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://www.linkedin.com/in/fahad9993">
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer hover:scale-125" />
         </Link>
       </div>
       {/* address */}
