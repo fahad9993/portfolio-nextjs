@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { RiTwitterLine } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -29,7 +29,7 @@ export default function Footer() {
           <AiFillInstagram className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://twitter.com/Fahad_9993">
-          <RiTwitterLine className="w-5 h-5 cursor-pointer hover:scale-125" />
+          <FaXTwitter className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
       </div>
     </div>
