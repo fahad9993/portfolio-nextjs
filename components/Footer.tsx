@@ -17,19 +17,19 @@ export default function Footer() {
       </div>
       <div className="flex pt-4 lg:pt-0 gap-6 px-2 text-green">
         <Link href="https://github.com/fahad9993">
-          <AiFillGithub />
+          <AiFillGithub className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://www.linkedin.com/in/fahad9993/">
-          <AiFillLinkedin />
+          <AiFillLinkedin className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://www.facebook.com/fahad9993/">
-          <AiFillFacebook />
+          <AiFillFacebook className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://www.instagram.com/fahad_rahm4n/">
-          <AiFillInstagram />
+          <AiFillInstagram className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
         <Link href="https://twitter.com/Fahad_9993">
-          <RiTwitterLine />
+          <RiTwitterLine className="w-5 h-5 cursor-pointer hover:scale-125" />
         </Link>
       </div>
     </div>
