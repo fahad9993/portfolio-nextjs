@@ -21,12 +21,12 @@ export default function About() {
         <title>Md. Fahad Rahman | About | Portfolio</title>
       </Head>
       <h5 className="my-3 font-medium">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged.
+        Md. Fahad Rahman is a Mechanical Engineer, who graduated from Bangladesh
+        University of Engineering and Technology.
+        <br />
+        Fahad worked as an Administrative Assistant at World Health Organization
+        and was responsible for the management of the Emergency Health Program
+        in Cox&apos;s Bazar.
       </h5>
       <div
         className="p-4 mt-5 bg-gray-400 dark:bg-dark-100 flex-grow"
