@@ -6,7 +6,6 @@ import { services } from "@/data";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "@/animations";
-import Head from "next/head";
 
 export default function About() {
   return (
@@ -17,9 +16,6 @@ export default function About() {
       animate="animate"
       exit="exit"
     >
-      <Head>
-        <title>Md. Fahad Rahman | About | Portfolio</title>
-      </Head>
       <h5 className="my-3 font-medium">
         Md. Fahad Rahman is a Mechanical Engineer, who graduated from Bangladesh
         University of Engineering and Technology.
