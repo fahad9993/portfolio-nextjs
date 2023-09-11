@@ -18,37 +18,36 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b> and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b> and <b>React.js</b>.",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "Handle database, server, api using <b>Express </b> & other popular frameworks",
+      "Handle database, server, api using <b>Express </b> & other popular frameworks.",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
-    about:
-      "I can develop robust REST API using <b>django-rest-api</b> & <b>Node API</b>",
+    about: "I can develop robust REST API using <b>Node API</b>.",
   },
   {
     Icon: FaCode,
     title: "Progamming Languages",
     about:
-      "I can work with <b> C </b> and <b>Python</b> as well as learning <b>Android App Development</b>",
+      "I can work with <b> C </b> and <b>Python</b> and also learning <b>Android App Development</b>.",
   },
   {
     Icon: SiLatex,
     title: "Typesetting",
     about:
-      "Work with <b><span className={styles.latex}>L<sup>A</sup>T<sub>E</sub>X</span></b> to create beautifully typesetted documents and can handle complex packages",
+      "Work with <b><span className={styles.latex}>L<sup>A</sup>T<sub>E</sub>X</span></b> to create beautifully typesetted documents and can handle complex packages.",
   },
   {
     Icon: SlLayers,
     title: "Design",
     about:
-      "Work with <b>AutoCAD</b>, <b>Solidworks</b> and <b>Adobe Illustrator</b> to create engineering designs, logos and many more",
+      "Work with <b>AutoCAD</b>, <b>Solidworks</b> and <b>Adobe Illustrator</b> to create engineering designs, logos and many more.",
   },
 ];
 
