@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${nunito_sans.className} bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white`}
       >
-        <Main children={children} />
+        <Main>{children}</Main>
       </body>
     </html>
   );
