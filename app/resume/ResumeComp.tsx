@@ -30,7 +30,7 @@ export default function ResumeComp() {
               href="/resume/experience"
               className="bg-gradient-to-r from-green to-blue-400 rounded-full py-2 px-5 text-white"
             >
-              Show More
+              Details
             </Link>
           </div>
         </motion.div>
@@ -45,7 +45,7 @@ export default function ResumeComp() {
               href="/resume/education"
               className="bg-gradient-to-r from-green to-blue-400 rounded-full py-2 px-5 text-white"
             >
-              Show More
+              Details
             </Link>
           </div>
         </motion.div>
