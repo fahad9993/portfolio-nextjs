@@ -24,6 +24,9 @@ export default function Navbar() {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/resume") setActiveItem("Resume");
     if (pathname === "/projects") setActiveItem("Projects");
+    // Setting active item for dynamic routes
+    if (pathname === "/resume/experience") setActiveItem("Resume");
+    if (pathname === "/resume/education") setActiveItem("Resume");
   }, []);
 
   return (
