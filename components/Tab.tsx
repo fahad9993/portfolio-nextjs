@@ -36,7 +36,7 @@ export default function BasicTabs({
             className={`cursor-pointer py-2 px-4 capitalize flex-grow ${
               activeTab === index
                 ? "bg-gradient-to-r from-green to-blue-400 text-white"
-                : "border-transparent text-gray-500 hover:bg-gradient-to-r hover:from-green hover:to-blue-600 hover:text-gray-100 transition duration-300 ease-in-out"
+                : "border-transparent hover:bg-gradient-to-r hover:from-green hover:to-blue-600 hover:text-gray-100 transition duration-300 ease-in-out"
             }`}
           >
             {item}
