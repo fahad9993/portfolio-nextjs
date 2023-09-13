@@ -7,7 +7,7 @@ import Tab from "@/components/Tab";
 import { educations, experiences } from "@/data";
 import EduExpCard from "@/components/EduExpCard";
 
-export default function page({ section }: { section: string }) {
+export default function ResumeSection({ section }: { section: string }) {
   // State to store the selected tabName
   const [selectedTab, setSelectedTab] = useState<string | null>(section);
 
