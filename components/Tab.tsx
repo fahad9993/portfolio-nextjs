@@ -26,24 +26,22 @@ export default function BasicTabs({
   };
 
   return (
-    <div>
-      <div className="border-b border-gray-200">
-        <nav className="-mb-px flex">
-          {tabItems.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => handleTabClick(index)}
-              className={`cursor-pointer py-2 px-4 inline-flex items-center capitalize ${
-                activeTab === index
-                  ? "border-indigo-500 bg-white text-indigo-600"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
-              }`}
-            >
-              {item}
-            </div>
-          ))}
-        </nav>
-      </div>
+    <div className="border-b border-gray-200 mb-4">
+      <nav className="-mb-px flex">
+        {tabItems.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleTabClick(index)}
+            className={`cursor-pointer py-2 px-4 inline-flex items-center capitalize ${
+              activeTab === index
+                ? "bg-gradient-to-r from-green to-blue-400 text-white"
+                : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+            }`}
+          >
+            {item}
+          </div>
+        ))}
+      </nav>
     </div>
   );
 }
