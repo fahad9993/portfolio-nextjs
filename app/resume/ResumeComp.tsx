@@ -6,6 +6,7 @@ import { educations, experiences, languages, tools } from "@/data";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
+import Link from "next/link";
 
 export default function ResumeComp() {
   return (
@@ -24,6 +25,7 @@ export default function ResumeComp() {
           <h5 className="my-2 text-xl font-bold">{experiences[0].title}</h5>
           <p className="font-semibold">{experiences[0].place}</p>
           <p className="font-thin">{experiences[0].timeframe}</p>
+          <Link href="/resume/experience">show more</Link>
         </motion.div>
         {/* Education */}
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
@@ -31,6 +33,7 @@ export default function ResumeComp() {
           <h5 className="my-2 text-xl font-bold">{educations[0].title}</h5>
           <p className="font-semibold">{educations[0].place}</p>
           <p className="font-thin">{educations[0].timeframe}</p>
+          <Link href="/resume/education">show more</Link>
         </motion.div>
       </div>
       {/* Languages and Tools */}
