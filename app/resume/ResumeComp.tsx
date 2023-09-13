@@ -21,24 +21,16 @@ export default function ResumeComp() {
         {/* Experience */}
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
-          <div>
-            {experiences.map((card) => (
-              <div key={card.place}>
-                <EduExpCard card={card} />
-              </div>
-            ))}
-          </div>
+          <h5 className="my-2 text-xl font-bold">{experiences[0].title}</h5>
+          <p className="font-semibold">{experiences[0].place}</p>
+          <p className="font-thin">{experiences[0].timeframe}</p>
         </motion.div>
         {/* Education */}
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
-          <div>
-            {educations.map((card) => (
-              <div key={card.title}>
-                <EduExpCard card={card} />
-              </div>
-            ))}
-          </div>
+          <h5 className="my-2 text-xl font-bold">{educations[0].title}</h5>
+          <p className="font-semibold">{educations[0].place}</p>
+          <p className="font-thin">{educations[0].timeframe}</p>
         </motion.div>
       </div>
       {/* Languages and Tools */}
