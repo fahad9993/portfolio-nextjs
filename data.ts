@@ -122,7 +122,7 @@ export const educations: IEducation[] = [
     title: "BSc in Mechanical Engineering",
     place: "Bangladesh University of Engineering and Technology",
     about:
-      "BSc in Mechanical Engineering from BUET, 2017. Aspiring to pursue further studies in Automobile or Aeronautical Engineering.",
+      "Graduated with a BSc in Mechanical Engineering in 2017. Developed an automated library system using Arduino and laser-crafted robot arms. Thesis focused on modifying the experimental setup for measuring the viscoelastic response of super elastic shape memory alloy rod under bending and twisting. Proficient in C, MATLAB, AutoCAD, SolidWorks, and other engineering software. Seeking a career in automobile or aeronautical engineering.",
     timeframe: "Sep 2017",
   },
   {
@@ -135,7 +135,8 @@ export const educations: IEducation[] = [
   {
     title: "SSC",
     place: "Dhaka Residential Model College",
-    about: "It was the first national examination.",
+    about:
+      "In 2008, I achieved a remarkable feat by securing a Golden A+ in my SSC exams while studying at Dhaka Residential Model College. ",
     timeframe: "Jun 2008",
   },
 ];
