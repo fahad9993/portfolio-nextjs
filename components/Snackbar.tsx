@@ -11,13 +11,13 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function CustomizedSnackbars() {
-  const [open, setOpen] = React.useState(false);
+type Props = {
+  message: string;
+  open: boolean;
+  setOpen: (value: boolean) => void;
+};
 
-  const handleClick = () => {
-    setOpen(true);
-  };
-
+export default function SnackBar({ message, open, setOpen }: Props) {
   const handleClose = (
     event?: React.SyntheticEvent | Event,
     reason?: string
@@ -31,23 +31,16 @@ export default function CustomizedSnackbars() {
 
   return (
     <Stack spacing={2} sx={{ width: "100%" }}>
-      <Button variant="outlined" onClick={handleClick}>
-        Open success snackbar
-      </Button>
       <Snackbar
         open={open}
         autoHideDuration={5000}
         onClose={handleClose}
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "70%" }}>
-          This is a success message!
+        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
+          {message}
         </Alert>
       </Snackbar>
-      {/* <Alert severity="error">This is an error message!</Alert>
-      <Alert severity="warning">This is a warning message!</Alert>
-      <Alert severity="info">This is an information message!</Alert>
-      <Alert severity="success">This is a success message!</Alert> */}
     </Stack>
   );
 }
