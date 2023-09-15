@@ -3,7 +3,7 @@
 import { routeAnimation } from "@/animations";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import SnackBar from "./SnackBar";
+import SnackBar from "./Snackbar";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
