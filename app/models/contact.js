@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 // Creating a contact schema for mongoDB
 const contactSchema = new Schema({
