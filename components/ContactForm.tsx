@@ -11,7 +11,9 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
-  const [error, setError] = useState([]);
+  const [msg, setMsg] = useState([]); // Change 'error' to 'msg'
+  const [success, setSuccess] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -34,9 +36,17 @@ export default function ContactForm() {
       body: JSON.stringify(formData),
     });
 
-    const { msg } = await res.json();
-    setError(msg);
-    console.log(error);
+    const { msg, success } = await res.json();
+    setMsg(msg); // Update 'error' to 'msg'
+    setSuccess(success);
+
+    if (success) {
+      setFormData({
+        fullname: "",
+        email: "",
+        message: "",
+      });
+    }
   };
 
   // For snackbar
@@ -70,7 +80,7 @@ export default function ContactForm() {
             placeholder="John Doe"
             value={formData.fullname}
             onChange={handleChange}
-            required
+            //required
             className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
@@ -84,7 +94,7 @@ export default function ContactForm() {
             placeholder="user@email.com"
             value={formData.email}
             onChange={handleChange}
-            required
+            //required
             className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
@@ -100,7 +110,7 @@ export default function ContactForm() {
             placeholder="Type your text message here..."
             value={formData.message}
             onChange={handleChange}
-            required
+            //required
             //rows={textareaRows}
             className="w-full h-32 border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           ></textarea>
@@ -112,11 +122,8 @@ export default function ContactForm() {
           Submit
         </button>
       </form>
-      <SnackBar
-        message="Your message has been deliverd successfully!"
-        open={open}
-        setOpen={setOpen}
-      />
+
+      <SnackBar errors={msg} severity={success ? "success" : "warning"} />
     </motion.div>
   );
 }
