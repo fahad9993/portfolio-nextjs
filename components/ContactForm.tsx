@@ -11,7 +11,7 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
-
+  const [error, setError] = useState([]);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -22,10 +22,20 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here (e.g., send data to a server or an email service)
     console.log(formData);
+    const res = await fetch("api/contact", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ formData }),
+    });
+
+    const { msg } = await res.json();
+    setError(msg);
   };
 
   // Convert formData.message.length to a number for the 'rows' attribute
