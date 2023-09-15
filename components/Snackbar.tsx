@@ -1,8 +1,8 @@
 import * as React from "react";
 import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
+import { Severity } from "@/types";
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   props,
@@ -12,12 +12,13 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 type Props = {
-  message: string;
+  message: string[];
   open: boolean;
   setOpen: (value: boolean) => void;
+  severity: Severity;
 };
 
-export default function SnackBar({ message, open, setOpen }: Props) {
+export default function SnackBar({ message, open, setOpen, severity }: Props) {
   const handleClose = (
     event?: React.SyntheticEvent | Event,
     reason?: string
@@ -37,7 +38,7 @@ export default function SnackBar({ message, open, setOpen }: Props) {
         onClose={handleClose}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
+        <Alert onClose={handleClose} severity={severity} sx={{ width: "100%" }}>
           {message}
         </Alert>
       </Snackbar>
