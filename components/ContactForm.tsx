@@ -7,7 +7,7 @@ import SnackBar from "./SnackBar";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    fullname: "",
     email: "",
     message: "",
   });
@@ -62,13 +62,13 @@ export default function ContactForm() {
       >
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-            Name
+            Full Name
           </label>
           <input
             type="text"
-            name="name"
+            name="fullname"
             placeholder="John Doe"
-            value={formData.name}
+            value={formData.fullname}
             onChange={handleChange}
             required
             className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
