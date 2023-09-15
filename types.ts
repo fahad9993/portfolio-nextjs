@@ -44,3 +44,5 @@ export type Category =
   | "express"
   | "html"
   | "css";
+
+export type Severity = "error" | "warning" | "info" | "success";

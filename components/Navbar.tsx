@@ -24,6 +24,7 @@ export default function Navbar() {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/resume") setActiveItem("Resume");
     if (pathname === "/projects") setActiveItem("Projects");
+    if (pathname === "/contact") setActiveItem("Contact");
     // Setting active item for dynamic routes
     if (pathname === "/resume/experience") setActiveItem("Resume");
     if (pathname === "/resume/education") setActiveItem("Resume");
@@ -52,6 +53,12 @@ export default function Navbar() {
           setActiveItem={setActiveItem}
           name="Projects"
           route="/projects"
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name="Contact"
+          route="/contact"
         />
       </div>
     </div>
