@@ -31,15 +31,14 @@ export default function ContactForm() {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ formData }),
+      body: JSON.stringify(formData),
     });
 
     const { msg } = await res.json();
     setError(msg);
+    console.log(error);
   };
 
-  // Convert formData.message.length to a number for the 'rows' attribute
-  const textareaRows = formData.message.length ? formData.message.length : 4;
   // For snackbar
   const [open, setOpen] = React.useState(false);
 
@@ -99,8 +98,8 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             required
-            rows={textareaRows}
-            className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            //rows={textareaRows}
+            className="w-full h-32 border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           ></textarea>
         </div>
         <button
