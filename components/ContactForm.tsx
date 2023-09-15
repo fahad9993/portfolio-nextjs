@@ -49,13 +49,6 @@ export default function ContactForm() {
     }
   };
 
-  // For snackbar
-  const [open, setOpen] = React.useState(false);
-
-  const handleClick = () => {
-    setOpen(true);
-  };
-
   return (
     <motion.div
       className="max-w-md mx-auto p-4 bg-white shadow-md rounded-md"
@@ -64,12 +57,7 @@ export default function ContactForm() {
       animate="animate"
       exit="exit"
     >
-      <form
-        onSubmit={(e) => {
-          handleSubmit(e);
-          handleClick();
-        }}
-      >
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
             Full Name
