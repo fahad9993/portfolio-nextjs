@@ -35,6 +35,9 @@ const config: Config = {
           700: "#202125",
         },
       },
+      screens: {
+        xsm: "420px",
+      },
     },
   },
   variants: {
