@@ -4,6 +4,7 @@ import { NavItemProps } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import MobileMenu from "./MobileMenu";
 
 const NavItem = ({ activeItem, setActiveItem, name, route }: NavItemProps) => {
   return activeItem !== name ? (
@@ -35,7 +36,7 @@ export default function Navbar() {
       <span className="font-bold text-green text-xl border-b-4 border-green md:text-2xl">
         {activeItem}
       </span>
-      <div className="text-lg flex space-x-5">
+      <div className="text-lg sm:flex space-x-5 hidden">
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
@@ -61,6 +62,7 @@ export default function Navbar() {
           route="/contact"
         />
       </div>
+      <MobileMenu />
     </div>
   );
 }
