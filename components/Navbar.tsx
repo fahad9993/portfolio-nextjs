@@ -9,7 +9,10 @@ import MobileMenu from "./MobileMenu";
 const NavItem = ({ activeItem, setActiveItem, name, route }: NavItemProps) => {
   return activeItem !== name ? (
     <Link href={route}>
-      <span onClick={() => setActiveItem(name)} className="hover:text-green">
+      <span
+        onClick={() => setActiveItem(name)}
+        className="hover:text-green capitalize"
+      >
         {name}
       </span>
     </Link>
@@ -22,47 +25,47 @@ export default function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname === "/") setActiveItem("About");
-    if (pathname === "/resume") setActiveItem("Resume");
-    if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/contact") setActiveItem("Contact");
+    if (pathname === "/") setActiveItem("about");
+    if (pathname === "/resume") setActiveItem("resume");
+    if (pathname === "/projects") setActiveItem("projects");
+    if (pathname === "/contact") setActiveItem("contact");
     // Setting active item for dynamic routes
-    if (pathname === "/resume/experience") setActiveItem("Resume");
-    if (pathname === "/resume/education") setActiveItem("Resume");
+    if (pathname === "/resume/experience") setActiveItem("resume");
+    if (pathname === "/resume/education") setActiveItem("resume");
   }, []);
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="font-bold text-green text-xl border-b-4 border-green md:text-2xl">
+      <span className="font-bold text-green text-xl border-b-4 border-green md:text-2xl capitalize">
         {activeItem}
       </span>
-      <div className="text-lg sm:flex space-x-5 hidden">
+      <div className="text-lg xsm:flex space-x-5 hidden">
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name="About"
+          name="about"
           route="/"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name="Resume"
+          name="resume"
           route="/resume"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name="Projects"
+          name="projects"
           route="/projects"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name="Contact"
+          name="contact"
           route="/contact"
         />
       </div>
-      <MobileMenu />
+      <MobileMenu activeItem={activeItem} setActiveItem={setActiveItem} />
     </div>
   );
 }
