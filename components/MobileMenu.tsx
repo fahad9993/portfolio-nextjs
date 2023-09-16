@@ -1,67 +1,51 @@
-import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { MdOutlineDashboard } from "react-icons/md";
-import { RiSettings4Line } from "react-icons/ri";
-import { TbReportAnalytics } from "react-icons/tb";
-import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
-import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
+// components/MobileMenu.js
 import Link from "next/link";
+import React, { useState } from "react";
+import { FiMenu } from "react-icons/fi";
 
-const MobileMenu = () => {
-  const menus = [
-    { name: "about", link: "/", icon: MdOutlineDashboard },
-    { name: "resume", link: "/resume", icon: AiOutlineUser },
-    { name: "projects", link: "/projects", icon: FiMessageSquare },
-    { name: "contact", link: "/contact", icon: FiMessageSquare },
-  ];
-  const [open, setOpen] = useState(true);
-  return (
-    <section className="sm:top-0 top-1/2 left-0 fixed sm:translate-y-1/2 -translate-y-1/2 opacity-50 sm:hidden">
-      <div className="flex justify-end gap-2">
-        <div
-          className={`bg-[#0e0e0e]  ${
-            open ? "sm:w-72 w-16" : "w-8 sm:w-16"
-          } duration-500 text-gray-100 px-1`}
-        >
-          <div className="py-3 flex justify-start">
-            <HiMenuAlt3
-              size={12}
-              className="cursor-pointer"
-              onClick={() => setOpen(!open)}
-            />
-          </div>
-          <div className="mt-4 flex flex-col gap-4 relative">
-            {menus?.map((menu, i) => (
-              <Link
-                href={menu?.link}
-                key={i}
-                className="mt-5 group flex flex-col sm:flex-row items-center text-sm  gap-1 font-medium p-2 hover:bg-gray-800 rounded-md"
-              >
-                <div>{React.createElement(menu?.icon, { size: "10" })}</div>
-                <h2
-                  style={{
-                    transitionDelay: `${i + 3}00ms`,
-                  }}
-                  className={`whitespace-pre duration-500 ${
-                    !open && "opacity-0 translate-x-28 overflow-hidden"
-                  }`}
-                >
-                  {menu?.name}
-                </h2>
-                {/* <h2
-                  className={`${
-                    open && "hidden"
-                  } absolute left-48 bg-white font-semibold whitespace-pre text-red-600 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit  `}
-                >
-                  {menu?.name}
-                </h2> */}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+export default function MobileMenu({
+  activeItem,
+  setActiveItem,
+}: {
+  activeItem: string;
+  setActiveItem: (value: string) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const PageLink = ({ name }: { name: string }) => (
+    <Link
+      href={name === "about" ? "/" : `/${name}`}
+      className={`hover:text-blue-500 ${
+        activeItem === name ? "text-black dark:text-white" : "text-gray-500"
+      } rounded-md capitalize`}
+      onClick={() => setActiveItem(name)}
+    >
+      {name}
+    </Link>
   );
-};
 
-export default MobileMenu;
+  return (
+    <div className="fixed bottom-5 right-5 z-10 xsm:hidden">
+      <div
+        className={`w-8 h-8 bg-gradient-radial from-green to-blue-400 rounded-full flex flex-col justify-around items-center cursor-pointer transition-colors ${
+          isOpen ? "hover:bg-blue-600" : ""
+        }`}
+        onClick={toggleMenu}
+      >
+        <FiMenu className="text-white" />
+      </div>
+      {isOpen && (
+        <div className="flex flex-col space-y-2">
+          <PageLink name="about" />
+          <PageLink name="resume" />
+          <PageLink name="projects" />
+          <PageLink name="contact" />
+        </div>
+      )}
+    </div>
+  );
+}
