@@ -69,7 +69,7 @@ export default function ContactForm() {
             value={formData.fullname}
             onChange={handleChange}
             //required
-            className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full border rounded-md py-2 px-3 text-gray-700 dark:text-white leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-4">
@@ -83,7 +83,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             //required
-            className="w-full border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full border rounded-md py-2 px-3 text-gray-700 dark:text-white leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-4">
@@ -100,7 +100,7 @@ export default function ContactForm() {
             onChange={handleChange}
             //required
             //rows={textareaRows}
-            className="w-full h-32 border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full h-32 border rounded-md py-2 px-3 text-gray-700 dark:text-white leading-tight focus:outline-none focus:shadow-outline"
           ></textarea>
         </div>
         <button
