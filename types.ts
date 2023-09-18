@@ -36,6 +36,14 @@ export interface IProject {
   key_techs: string[];
 }
 
+export interface Message {
+  _id: string;
+  fullname: string;
+  email: string;
+  message: string;
+  date: string;
+}
+
 export type Category =
   | "javascript"
   | "react"
