@@ -27,7 +27,7 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here (e.g., send data to a server or an email service)
-    console.log(formData);
+    //console.log(formData);
     const res = await fetch("api/contact", {
       method: "POST",
       headers: {
