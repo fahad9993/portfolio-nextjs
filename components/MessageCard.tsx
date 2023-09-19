@@ -14,11 +14,9 @@ export default function MessageCard({
       <h3 className="text-lg font-semibold mb-2">
         Date: {formattedDateString} at {formattedTime}
       </h3>
-      <h3 className="text-lg font-semibold mb-2">
-        Name: <span className="text-blue-500">{fullname}</span>
-      </h3>
+      <h3 className="text-lg font-semibold mb-2">Name: {fullname}</h3>
       <h3 className="text-lg font-semibold mb-2">Email: {email}</h3>
-      <p className="text-gray-700">Message: {message}</p>
+      <p>Message: {message}</p>
     </div>
   );
 }
