@@ -39,7 +39,7 @@ export default function MessageComp() {
       animate="animate"
       exit="exit"
     >
-      <h1 className="text-xl font-bold tracking-wide">Messages</h1>
+      <h1 className="text-xl font-bold tracking-wide mb-8">Messages</h1>
       {messages.map((message) => (
         <MessageCard message={message} key={message._id} />
       ))}
