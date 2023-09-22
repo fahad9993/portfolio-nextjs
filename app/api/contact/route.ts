@@ -24,18 +24,18 @@ export async function POST(req: NextRequest) {
     //   },
     // });
 
-    const mailOptions = {
-      from: process.env.EMAIL_USERNAME,
-      to: email, // Use the user's email from the contact form
-      subject: "Thank you for contacting me!",
-      html: `<p>Hello ${fullname},</p>
-      <p>Thank you for contacting me. I will get back to you soon.</p>
-      <p>Best Regards,</p>
-      <p style="color: blue;">Md. Fahad Rahman</p>`,
-    };
+    // const mailOptions = {
+    //   from: process.env.EMAIL_USERNAME,
+    //   to: email, // Use the user's email from the contact form
+    //   subject: "Thank you for contacting me!",
+    //   html: `<p>Hello ${fullname},</p>
+    //   <p>Thank you for contacting me. I will get back to you soon.</p>
+    //   <p>Best Regards,</p>
+    //   <p style="color: blue;">Md. Fahad Rahman</p>`,
+    // };
 
     // await transporter.sendMail(mailOptions);
-    await wrapedSendMail(mailOptions);
+    // await wrapedSendMail(mailOptions);
 
     return NextResponse.json({
       msg: ["Message sent successfully"],
