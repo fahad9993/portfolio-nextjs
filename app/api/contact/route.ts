@@ -13,27 +13,52 @@ export async function POST(req: NextRequest) {
 
     // Send acknowledgment email
     // Create a Nodemailer transporter using the SMTP settings
-    // const transporter = nodemailer.createTransport({
-    //   host: "smtp.office365.com",
-    //   port: 587,
-    //   secure: false, // true for 465, false for other ports
-    //   auth: {
-    //     user: process.env.EMAIL_USERNAME,
-    //     pass: process.env.EMAIL_PASSWORD,
-    //   },
-    // });
+    const transporter = nodemailer.createTransport({
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
 
-    // const mailOptions = {
-    //   from: process.env.EMAIL_USERNAME,
-    //   to: email, // Use the user's email from the contact form
-    //   subject: "Thank you for contacting me!",
-    //   html: `<p>Hello ${fullname},</p>
-    //   <p>Thank you for contacting me. I will get back to you soon.</p>
-    //   <p>Best Regards,</p>
-    //   <p style="color: blue;">Md. Fahad Rahman</p>`,
-    // };
+    const mailOptions = {
+      from: process.env.EMAIL_USERNAME,
+      to: email, // Use the user's email from the contact form
+      subject: "Thank you for contacting me!",
+      html: `<p>Hello ${fullname},</p>
+      <p>Thank you for contacting me. I will get back to you soon.</p>
+      <p>Best Regards,</p>
+      <p style="color: blue;">Md. Fahad Rahman</p>`,
+    };
+
+    await new Promise((resolve, reject) => {
+      // verify connection configuration
+      transporter.verify(function (error, success) {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log("Server is ready to take our messages");
+          resolve(success);
+        }
+      });
+    });
 
     // await transporter.sendMail(mailOptions);
+    await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+          console.error(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
+    });
 
     return NextResponse.json({
       msg: ["Message sent successfully"],
