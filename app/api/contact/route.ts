@@ -33,8 +33,6 @@ export async function POST(req: NextRequest) {
     //   <p style="color: blue;">Md. Fahad Rahman</p>`,
     // };
 
-    // await transporter.sendMail(mailOptions);
-
     return NextResponse.json({
       msg: ["Message sent successfully"],
       success: true,
