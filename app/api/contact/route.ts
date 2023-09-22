@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     await connectDB();
     await Contact.create({ fullname, email, message });
 
-    // Send acknowledgment email
+    // Send acknowledgment email==
     // Create a Nodemailer transporter using the SMTP settings
     // const transporter = nodemailer.createTransport({
     //   host: "smtp.office365.com",
