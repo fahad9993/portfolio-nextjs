@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/app/lib/mongodb";
 import Contact from "@/app/models/contact";
 import mongoose from "mongoose";
-import nodemailer from "nodemailer";
-import { wrapedSendMail } from "@/app/lib/Transporter";
+import { Resend } from "resend";
+import EmailTemplate from "@/components/EmailTemplate";
 
 export async function POST(req: NextRequest) {
   const { fullname, email, message } = await req.json();
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
     await connectDB();
@@ -36,6 +37,13 @@ export async function POST(req: NextRequest) {
 
     // await transporter.sendMail(mailOptions);
     // await wrapedSendMail(mailOptions);
+
+    await resend.emails.send({
+      from: "Md. Fahad Rahman | Portfolio <onboarding@resend.dev>",
+      to: [email],
+      subject: "Thank you for contacting me!",
+      react: EmailTemplate({ fullname: fullname }),
+    });
 
     return NextResponse.json({
       msg: ["Message sent successfully"],
