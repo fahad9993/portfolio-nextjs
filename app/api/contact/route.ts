@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/app/lib/mongodb";
 import Contact from "@/app/models/contact";
 import mongoose from "mongoose";
+import { Resend } from "resend";
 
 export async function POST(req: NextRequest) {
   const { fullname, email, message } = await req.json();
