@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/app/lib/mongodb";
 import Contact from "@/app/models/contact";
 import mongoose from "mongoose";
-import nodemailer from "nodemailer";
-import { wrapedSendMail } from "@/app/lib/Transporter";
 
 export async function POST(req: NextRequest) {
   const { fullname, email, message } = await req.json();
