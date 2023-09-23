@@ -18,7 +18,7 @@ export default function EmailTemplate({ fullname }: EmailTemplateProps) {
       <p>Hello {fullname},</p>
       <p>Thank you for contacting me. I will get back to you soon.</p>
       <p>Best Regards,</p>
-      <p className="text-blue-800">Md. Fahad Rahman</p>
+      <p style={{ color: "blue" }}>Md. Fahad Rahman</p>
     </div>
   );
 }
