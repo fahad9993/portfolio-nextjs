@@ -73,6 +73,11 @@ export const languages: ISkill[] = [
     Icon: FaReact,
   },
   {
+    name: "React Native",
+    level: "10%",
+    Icon: FaReact,
+  },
+  {
     name: "Node.js",
     level: "60%",
     Icon: FaNodeJs,
