@@ -29,8 +29,10 @@ export default function Bar({ data: { name, level, Icon } }: { data: ISkill }) {
         initial="initial"
         animate="animate"
       >
-        <Icon className="mr-3" />
-        {name}
+        <div>
+          <Icon className="mr-3" />
+        </div>
+        <span style={{ whiteSpace: "nowrap" }}>{name}</span>
       </motion.div>
     </div>
   );
