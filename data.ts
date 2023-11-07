@@ -68,7 +68,7 @@ export const languages: ISkill[] = [
     Icon: SiJavascript,
   },
   {
-    name: "React",
+    name: "React.js",
     level: "80%",
     Icon: FaReact,
   },
