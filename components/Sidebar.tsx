@@ -41,7 +41,7 @@ export default function Sidebar() {
       >
         Md. Fahad Rahman
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-md">
         Mechanical Engineer | Administrative Professional | Full-Stack Web
         Developer in Training
       </p>
