@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <div className="bg-white dark:bg-dark-500 rounded-2xl shadow-custom-light dark:shadow-custom-dark flex flex-col p-4 lg:flex-row lg:justify-between items-center">
       <div className="text-sm px-2 text-center">
-        Copyright &copy; {year} - All rights reserved by Md. Fahad Rahman
+        &copy; 2023&ndash;{year} Md. Fahad Rahman. All rights reserved.
       </div>
       <div className="flex pt-4 lg:pt-0 gap-6 px-2 text-green">
         <Link href="https://github.com/fahad9993">
