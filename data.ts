@@ -127,21 +127,21 @@ export const educations: IEducation[] = [
     title: "BSc in Mechanical Engineering",
     place: "Bangladesh University of Engineering and Technology",
     about:
-      "Graduated with a BSc in Mechanical Engineering in 2017. Developed an automated library system using Arduino and laser-crafted robot arms. Thesis focused on modifying the experimental setup for measuring the viscoelastic response of super elastic shape memory alloy rod under bending and twisting. Proficient in C, MATLAB, AutoCAD, SolidWorks, and other engineering software. Seeking a career in automobile or aeronautical engineering.",
+      "With a BSc in Mechanical Engineering, I graduated in 2017 and have since immersed myself in innovative engineering projects. My academic journey includes the development of an automated library system powered by Arduino and precision-engineered robot arms, showcasing my knack for automation and robotics. My thesis delved into advanced material science, where I modified experimental setups to measure the viscoelastic response of superelastic shape memory alloys under complex bending and twisting. Armed with expertise in C, MATLAB, AutoCAD, SolidWorks, and other industry-standard software, I am passionate about driving advancements in automobile and aeronautical engineering, leveraging my technical skills to push the boundaries of what's possible.",
     timeframe: "Sep 2017",
   },
   {
     title: "HSC",
     place: "Dhaka Residential Model College",
     about:
-      "I was in the Science group. I have Higher Mathematics and Biology in major.",
+      "I have completed HSC in Science with majors in Higher Mathematics and Biology.",
     timeframe: "Jul 2011",
   },
   {
     title: "SSC",
     place: "Dhaka Residential Model College",
     about:
-      "In 2008, I achieved a remarkable feat by securing a Golden A+ in my SSC exams while studying at Dhaka Residential Model College. ",
+      "I achieved a remarkable feat by securing a Golden A+ in my SSC exam.",
     timeframe: "Jun 2008",
   },
 ];
