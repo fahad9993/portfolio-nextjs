@@ -226,4 +226,14 @@ export const projects: IProject[] = [
     category: ["html", "css"],
     key_techs: ["Html", "CSS"],
   },
+  {
+    id: "p05",
+    title: "Cash in Hand",
+    description: "A simple app for cash calculation.",
+    image_path: "/images/cash_app.jpg",
+    deployed_url: "",
+    github_url: "https://github.com/fahad9993/expense-tracker-gsheet",
+    category: ["react-native"],
+    key_techs: ["React Native"],
+  },
 ];

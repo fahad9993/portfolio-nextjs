@@ -51,6 +51,7 @@ export type Category =
   | "node"
   | "express"
   | "html"
-  | "css";
+  | "css"
+  | "react-native";
 
 export type Severity = "error" | "warning" | "info" | "success";
