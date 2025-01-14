@@ -33,7 +33,7 @@ export default function ProjectCard({
         src={image_path}
         width={300}
         height={150}
-        style={{ width: "auto", height: "auto" }}
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
         alt={title}
         className="cursor-pointer"
         onClick={() => setShowDetails(id)}

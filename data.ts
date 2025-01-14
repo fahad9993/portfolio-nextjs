@@ -3,6 +3,7 @@ import { FaServer, FaCode, FaPython, FaReact, FaNodeJs } from "react-icons/fa";
 import { AiFillApi, AiOutlineApi } from "react-icons/ai";
 import {
   SiAdobeillustrator,
+  SiAdobephotoshop,
   SiExpress,
   SiJavascript,
   SiLatex,
@@ -119,6 +120,11 @@ export const tools: ISkill[] = [
     name: "Adobe Illustrator",
     level: "70%",
     Icon: SiAdobeillustrator,
+  },
+  {
+    name: "Adobe Photoshop",
+    level: "50%",
+    Icon: SiAdobephotoshop,
   },
 ];
 

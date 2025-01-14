@@ -35,6 +35,7 @@ export default function ProjectNavbar(
       <NavItem value="all" {...props} />
       <NavItem value="javascript" {...props} />
       <NavItem value="react" {...props} />
+      <NavItem value="react-native" {...props} />
       <NavItem value="mongoDB" {...props} />
       <NavItem value="node" {...props} />
       <NavItem value="express" {...props} />
