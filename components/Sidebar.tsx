@@ -43,7 +43,7 @@ export default function Sidebar() {
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-md">
         Mechanical Engineer | Administrative Professional | Full-Stack Web
-        Developer in Training
+        Developer
       </p>
       <Link
         href="https://fahad9993.github.io/cv-new/assets/pdf/Fahad-cv.pdf"
