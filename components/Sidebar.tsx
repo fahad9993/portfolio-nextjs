@@ -8,6 +8,7 @@ import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { Black_Ops_One } from "next/font/google";
 import { useTheme } from "next-themes";
+import profilePic from "@/public/images/PP_Photo.jpg";
 
 // const imageLoader = ({ src }: any) => {
 //   return `https://fahad9993.github.io/cv-new/assets/img/${src}`;
@@ -29,7 +30,7 @@ export default function Sidebar() {
   return (
     <div>
       <Image
-        src="https://fahad9993.github.io/cv-new/assets/img/profilePic.png"
+        src={profilePic}
         width={128}
         height={128}
         className="rounded-full mx-auto border"
