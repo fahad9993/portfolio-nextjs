@@ -55,7 +55,7 @@ export const services: IService[] = [
 export const languages: ISkill[] = [
   {
     name: "Python",
-    level: "40%",
+    level: "50%",
     Icon: FaPython,
   },
   {
@@ -75,7 +75,7 @@ export const languages: ISkill[] = [
   },
   {
     name: "React Native",
-    level: "10%",
+    level: "80%",
     Icon: FaReact,
   },
   {
@@ -85,7 +85,7 @@ export const languages: ISkill[] = [
   },
   {
     name: "Express.js",
-    level: "50%",
+    level: "60%",
     Icon: SiExpress,
   },
   {
