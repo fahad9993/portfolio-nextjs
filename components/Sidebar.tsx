@@ -47,7 +47,7 @@ export default function Sidebar() {
         Developer
       </p>
       <Link
-        href="https://fahad9993.github.io/cv-new/assets/pdf/Fahad-cv.pdf"
+        href="https://next-resume-sepia.vercel.app/"
         className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-full flex justify-center items-center"
       >
         <GiTie className="w-6 h-6" /> Download Resume
