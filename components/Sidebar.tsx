@@ -43,8 +43,8 @@ export default function Sidebar() {
         Md. Fahad Rahman
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 dark:bg-dark-200 rounded-md">
-        Mechanical Engineer | Administrative Professional | Full-Stack Web
-        Developer
+        Mechanical Engineer | Administrative Professional | Web & App Dev
+        Enthusiast
       </p>
       <Link
         href="https://next-resume-sepia.vercel.app/"
